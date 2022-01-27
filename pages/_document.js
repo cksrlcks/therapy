@@ -107,7 +107,7 @@ export default class MyDocument extends Document {
                     />
                     <meta
                         property="og:url"
-                        content="https://waterweb.netlify.app/"
+                        content="https://spkorea.netlify.app"
                     />
                     <meta property="og:image" content="/img/og-img.png" />
                     <meta property="og:image:width" content="800" />
