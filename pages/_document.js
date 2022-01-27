@@ -97,10 +97,19 @@ export default class MyDocument extends Document {
                     <meta name="theme-color" content="#ffffff" />
                     {/* seo */}
                     <meta property="og:type" content="website" />
-                    <meta property="og:title" content="홈페이지 이름" />
-                    <meta property="og:site_name" content="홈페이지 이름" />
-                    <meta property="og:url" content="홈페이지 주소" />
-                    <meta property="og:image" content="썸네일 이미지 경로" />
+                    <meta
+                        property="og:title"
+                        content="감각운동심리치료사 조성호"
+                    />
+                    <meta
+                        property="og:site_name"
+                        content="감각운동심리치료사 조성호"
+                    />
+                    <meta
+                        property="og:url"
+                        content="https://waterweb.netlify.app/"
+                    />
+                    <meta property="og:image" content="/img/og-img.png" />
                     <meta property="og:image:width" content="800" />
                     <meta property="og:image:height" content="400" />
                     {this.props.styleTags}
