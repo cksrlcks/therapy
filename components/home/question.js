@@ -65,7 +65,7 @@ const SectionBlock = styled.section`
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 0.01em;
-    font-family: Albra, serif;
+    font-family: Vollkorn, serif;
     color: #000;
     margin-bottom: 1em;
   }
