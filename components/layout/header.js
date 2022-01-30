@@ -15,7 +15,8 @@ const throttle = function (callback, waitTime) {
 const Header = ({ goLine }) => {
   const [active, setActive] = useState(false)
   const [pageY, setPageY] = useState(0)
-  const documentRef = typeof window !== 'undefined' && useRef(document)
+  const isDocument = typeof window !== 'undefined' ? document : null
+  const documentRef = useRef(isDocument)
 
   const handleScroll = () => {
     const { pageYOffset } = window

@@ -36,7 +36,7 @@ const About = forwardRef((props, ref) => {
     </section>
   )
 })
-
+About.displayName = 'About'
 export default About
 
 const SectionBlock = styled.section`

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Reveal, Tween } from 'react-gsap'
 import Button from '../ui/button'
 import styled from 'styled-components'
-import { useTranspileTemplateLiterals } from 'babel-plugin-styled-components/lib/utils/options'
 
 const Question = ({ goLine }) => {
   const [advantage, setAdvantage] = useState([
