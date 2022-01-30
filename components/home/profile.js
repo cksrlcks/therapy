@@ -130,7 +130,7 @@ const SectionBlock = styled.section`
     text-align: center;
     img {
       max-width: 100%;
-      margin: 2rem 5rem;
+      padding: 2rem 5rem;
     }
   }
 
