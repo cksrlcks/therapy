@@ -65,6 +65,7 @@ const SectionBlock = styled.section`
   .title {
     float: left;
     font-family: Vollkorn, serif;
+    font-weight: 700;
     font-size: 2rem;
     font-weight: 700;
   }

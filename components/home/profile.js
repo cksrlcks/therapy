@@ -79,6 +79,7 @@ const SectionBlock = styled.section`
   padding: 12rem 0;
   .title {
     font-family: Vollkorn, serif;
+    font-weight: 700;
     font-size: 2rem;
     font-weight: 700;
   }
