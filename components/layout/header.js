@@ -37,7 +37,11 @@ const Header = ({ goLine }) => {
     <HeaderBlock className={active && 'on'}>
       <div className="app-inner">
         <h1 className="logo">
-          <img src="/img/logo.png" alt="감각운동심리치료" />
+          {active ? (
+            <img src="/img/logo.png" alt="감각운동심리치료" />
+          ) : (
+            <img src="/img/logo_w.png" alt="감각운동심리치료" />
+          )}
         </h1>
         <button className="contact-btn" onClick={goLine}>
           무료상담 신청하기
@@ -99,7 +103,7 @@ const HeaderBlock = styled.header`
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 
     .contact-btn {
-      transition-delay: 0.2s;
+      //transition-delay: 0.2s;
       visibility: visible;
       opacity: 1;
     }

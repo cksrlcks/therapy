@@ -27,7 +27,14 @@ const About = forwardRef((props, ref) => {
                 </p>
               </div>
               <figure className="about-poster">
-                <img src="/img/about.png" alt="감각운동심리치료사 조성호" />
+                {!props.isColor ? (
+                  <img src="/img/about.png" alt="감각운동심리치료사 조성호" />
+                ) : (
+                  <img
+                    src="/img/color/about.png"
+                    alt="감각운동심리치료사 조성호"
+                  />
+                )}
               </figure>
             </div>
           </Tween>

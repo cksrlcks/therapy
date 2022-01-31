@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Reveal, Tween } from 'react-gsap'
 import styled from 'styled-components'
 
-const Profile = () => {
+const Profile = ({ isColor }) => {
   const [history, setHistory] = useState([
     '現 디바인 컬러코칭아카데미 대표',
     '現 한국 감성색채협회 교육이사',
@@ -42,18 +42,34 @@ const Profile = () => {
                 <div className="right">
                   <figure className="profile-poster">
                     <div className="frame">
-                      <img
-                        className="profile-img"
-                        src="/img/profile_01.png"
-                        alt="감각운동심리치료사 조성호"
-                      />
+                      {!isColor ? (
+                        <img
+                          className="profile-img"
+                          src="/img/profile_01.png"
+                          alt="감각운동심리치료사 조성호"
+                        />
+                      ) : (
+                        <img
+                          className="profile-img"
+                          src="/img/color/profile_c_01.png"
+                          alt="감각운동심리치료사 조성호"
+                        />
+                      )}
                     </div>
                     <div className="frame">
-                      <img
-                        className="profile-img"
-                        src="/img/profile_02.png"
-                        alt="감각운동심리치료사 조성호"
-                      />
+                      {!isColor ? (
+                        <img
+                          className="profile-img"
+                          src="/img/profile_02.png"
+                          alt="감각운동심리치료사 조성호"
+                        />
+                      ) : (
+                        <img
+                          className="profile-img"
+                          src="/img/color/profile_c_02.png"
+                          alt="감각운동심리치료사 조성호"
+                        />
+                      )}
                     </div>
                   </figure>
                 </div>

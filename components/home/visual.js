@@ -1,9 +1,9 @@
 import Button from '../ui/button'
 import styled from 'styled-components'
 
-const Visual = ({ scrollToSec2 }) => {
+const Visual = ({ scrollToSec2, isColor }) => {
   return (
-    <SectionBlock>
+    <SectionBlock className={isColor && 'bgImg'}>
       <div className="app-inner">
         <h3 className="eng">Psychological Counseling</h3>
         <h2 className="title">인생을 바꿔볼까요</h2>
@@ -15,7 +15,9 @@ const Visual = ({ scrollToSec2 }) => {
           시작하기
         </Button>
       </div>
-      <video src="/mv_video.mp4" className="mv" muted autoPlay loop></video>
+      {!isColor && (
+        <video src="/mv_video.mp4" className="mv" muted autoPlay loop></video>
+      )}
     </SectionBlock>
   )
 }
@@ -32,6 +34,11 @@ const SectionBlock = styled.section`
   justify-content: center;
   position: relative;
   overflow: hidden;
+
+  &.bgImg {
+    background: url(/img/color/mv.png) no-repeat center;
+    background-size: cover;
+  }
 
   .eng {
     font-weight: 500;
